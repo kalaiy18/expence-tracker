@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(66, 63, 63);
+   display: grid;
+   place-items: center;
+   
+}
+#container{
+   width: 800px;
+   height: 600px;
+   background-color: antiquewhite;
+   display: flex;
+}
+#details{
+    flex: 1;
+    background-color: navy;
+    color: white;
+    padding:10px;
+    user-select: none;
+    
+    
+}
+
+#details h2,h3,h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+#details h2{
+    text-transform: uppercase;
+    color: gold;
+}
+#inc_exp {
+    /* background-color: black; */
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+}
+#inc_exp div{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 18px;
+    flex: 1;
+    border-radius: 2px;
+}
+#inc_exp div#income{
+    color: green;
+    border: 3px solid green;
+}
+#inc_exp div#expence{
+    color:red;
+    border: 3px solid red;
+}
+#form{
+    padding: 10px;
+    margin-top: 20px;
+}
+.form_control{
+    margin-top: 10px;
+}
+label{
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+input{
+    display: block;
+    border: 1px solid lightgrey;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border-radius: 3px;
+}
+#btn{
+    margin-top:60px;
+    background-color: aquamarine;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+#btn:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
+#transaction{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+#transaction h3{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    user-select: none;
+
+}
+#trans{
+    list-style: none;
+}
+#trans li{
+    background-color: aliceblue;
+    color: grey;
+    box-shadow: rgb(70, 52, 52)0px 1px 3px 0px rgb(156, 91, 91)0px 0px 0px 1px; 
+     border-bottom : 1px solid black; 
+    padding: 5px ;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600 ;
+    position: relative;
+    row-gap: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+#trans li.inc{
+    border-left: 3px solid green;
+}
+#trans li.exp{
+    border-left: 3px solid red;
+}
+
+#btn-del{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+#trans li:hover #btn-del{
+    opacity: 1;
+
+}
+
+
+
+
